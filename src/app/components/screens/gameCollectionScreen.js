@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, Image } from 'react-native';
-import Button from '@material-ui/core/Button';
 import Font from '../../assets/styles/globalStyling';
 import axios from 'axios';
 import IGDB_API_KEY from '../../../server/config';
@@ -58,10 +57,6 @@ export default function GameCollectionScreen() {
   return (
       <View>
         <Text style={{fontFamily: 'Roboto-Regular'}}>{gameState.game.id}</Text>
-        <Text style={{fontFamily: 'Roboto-Regular'}}>{gameState.game.name}</Text>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
       </View>
   );
 }

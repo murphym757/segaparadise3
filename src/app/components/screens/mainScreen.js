@@ -4,14 +4,17 @@ import React, {
 } from 'react';
 import GameCollectionScreen from './gameCollectionScreen';
 
+//FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 // React Navigation
 import {
   View, Text, Button, Image
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { MaterialCommunityIcons } from 'react-native-vector-icons';
 // App Styling
 import { 
   MainContainer,
@@ -22,7 +25,7 @@ import {
 } from '../../assets/styles/globalTheme';
 
 
-const Stack = createStackNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 // Main Page Code
 function Homepage({navigation}) {
@@ -80,34 +83,23 @@ export default function MainScreen(props) {
   const black = state.foundBlack;
   return (
     <NavigationContainer>
-      <Stack.Navigator 
-        screenOptions={{
-          headerTitle: props => <LogoTitle {...props} />,
-          headerStyle: {
-            backgroundColor: primaryColor,
-            elevation: 0,
-            shadowOpacity: 0,
-            borderBottomWidth: 0
-          },
-          headerTintColor: primaryFontColor,
-          style: {
-            shadowColor: 'transparent',
-          },
-        }}
-        initialRouteName="Home">
-        <Stack.Screen 
-          name="Home" 
+      <Tab.Navigator
+        initialRouteName="Home"
+        activeColor={primaryFontColor}
+        labelStyle={{ fontSize: 12 }}
+        style={{ backgroundColor: primaryColor }}
+      >
+        <Tab.Screen 
+          name="Home"
           options={{
-            
+            tabBarLabel: 'Home',
+            tabBarIcon: ({ color, size }) => (
+            <FontAwesomeIcon icon={ faHome } color={color} size={size} />
+          ),
           }}
           component={Homepage} 
         />
-        <Stack.Screen 
-          name="Game"
-           options={{  }}
-          component={GamePage} 
-        />
-      </Stack.Navigator>
+    </Tab.Navigator>
     </NavigationContainer>
   );
 }

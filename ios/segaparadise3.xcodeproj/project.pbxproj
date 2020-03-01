@@ -12,18 +12,18 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		149851866ECB4E17B28F878A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* segaparadise3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* segaparadise3Tests.m */; };
 		30ED82C4BE95D4743C24F775 /* libPods-segaparadise3-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9F946367A24F5F1A3BF80B /* libPods-segaparadise3-tvOSTests.a */; };
 		6C8D7DC2611450B39D919537 /* libPods-segaparadise3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219D1540D64B62B6E907108E /* libPods-segaparadise3.a */; };
+		AEA1CF08138A447A84C630D5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */; };
 		C04E9EB4CCDA74E2CB72C3B1 /* libPods-segaparadise3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2009D07B1151F9A8F3607A /* libPods-segaparadise3Tests.a */; };
 		D557124F99BB2D83AE2FE5F8 /* libPods-segaparadise3-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40549D10C2303B1E9DCEA0FC /* libPods-segaparadise3-tvOS.a */; };
-		E6D59F368B40401CBC5FFB75 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89682BC99C9243AD802791CF /* Roboto-Light.ttf */; };
-		149851866ECB4E17B28F878A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */; };
-		AEA1CF08138A447A84C630D5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */; };
 		D9C2DA82C4794CB09AA22303 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */; };
+		E6D59F368B40401CBC5FFB75 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89682BC99C9243AD802791CF /* Roboto-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +65,16 @@
 		4CC1A8D9ED3599B30CD32E18 /* Pods-segaparadise3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3.release.xcconfig"; path = "Target Support Files/Pods-segaparadise3/Pods-segaparadise3.release.xcconfig"; sourceTree = "<group>"; };
 		4E2009D07B1151F9A8F3607A /* libPods-segaparadise3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-segaparadise3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5546CDA3E6497DD2A65D59EA /* Pods-segaparadise3-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-segaparadise3-tvOSTests/Pods-segaparadise3-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		89682BC99C9243AD802791CF /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		94FB25A40D11352E2224DBA8 /* Pods-segaparadise3-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3-tvOS.release.xcconfig"; path = "Target Support Files/Pods-segaparadise3-tvOS/Pods-segaparadise3-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		AA9F946367A24F5F1A3BF80B /* libPods-segaparadise3-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-segaparadise3-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		BEC818B91CB5562F2167E015 /* Pods-segaparadise3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3Tests.release.xcconfig"; path = "Target Support Files/Pods-segaparadise3Tests/Pods-segaparadise3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C420551B73C0250AD9C9CC45 /* Pods-segaparadise3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3.debug.xcconfig"; path = "Target Support Files/Pods-segaparadise3/Pods-segaparadise3.debug.xcconfig"; sourceTree = "<group>"; };
+		D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		89682BC99C9243AD802791CF /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../src/app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../src/app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +208,7 @@
 			sourceTree = "<group>";
 		};
 		CE8DC3C0F20B4DDEBC05B5CB /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				89682BC99C9243AD802791CF /* Roboto-Light.ttf */,
 				D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */,
@@ -216,8 +216,8 @@
 				650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -251,6 +251,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				2257FB8841A1F031A9E65D71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,6 +419,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2257FB8841A1F031A9E65D71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-segaparadise3/Pods-segaparadise3-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-segaparadise3/Pods-segaparadise3-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
