@@ -20,6 +20,10 @@
 		6C8D7DC2611450B39D919537 /* libPods-segaparadise3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219D1540D64B62B6E907108E /* libPods-segaparadise3.a */; };
 		C04E9EB4CCDA74E2CB72C3B1 /* libPods-segaparadise3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2009D07B1151F9A8F3607A /* libPods-segaparadise3Tests.a */; };
 		D557124F99BB2D83AE2FE5F8 /* libPods-segaparadise3-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40549D10C2303B1E9DCEA0FC /* libPods-segaparadise3-tvOS.a */; };
+		E6D59F368B40401CBC5FFB75 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89682BC99C9243AD802791CF /* Roboto-Light.ttf */; };
+		149851866ECB4E17B28F878A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */; };
+		AEA1CF08138A447A84C630D5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */; };
+		D9C2DA82C4794CB09AA22303 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		C420551B73C0250AD9C9CC45 /* Pods-segaparadise3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-segaparadise3.debug.xcconfig"; path = "Target Support Files/Pods-segaparadise3/Pods-segaparadise3.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		89682BC99C9243AD802791CF /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../src/app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../src/app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +189,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				832E03C9369A51FD540875E4 /* Pods */,
+				CE8DC3C0F20B4DDEBC05B5CB /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +206,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		CE8DC3C0F20B4DDEBC05B5CB /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				89682BC99C9243AD802791CF /* Roboto-Light.ttf */,
+				D0AB3ACAA3D6408AB772DC6F /* Roboto-Medium.ttf */,
+				BCFD09BE820049678EB1FBD0 /* Roboto-Regular.ttf */,
+				650C63122A6644CFAE0821D0 /* Roboto-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +306,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +359,10 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				E6D59F368B40401CBC5FFB75 /* Roboto-Light.ttf in Resources */,
+				149851866ECB4E17B28F878A /* Roboto-Medium.ttf in Resources */,
+				AEA1CF08138A447A84C630D5 /* Roboto-Regular.ttf in Resources */,
+				D9C2DA82C4794CB09AA22303 /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

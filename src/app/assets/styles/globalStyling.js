@@ -13,5 +13,5 @@ export const MainContainer = styled.View `
 export const MainFont = styled.Text `
     font-size: 24px;
 	font-weight: 500;
-    color: ${currentTheme.secondaryColor};
+    color: ${currentTheme.primaryFontColor};
 `;

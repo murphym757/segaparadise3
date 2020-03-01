@@ -2,13 +2,17 @@ import React, {
   useState,
   useEffect
 } from 'react';
+import GameCollectionScreen from './gameCollectionScreen';
 
+// React Navigation
 import {
   View, Text, Button, Image
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+
+// App Styling
 import { 
   MainContainer,
   MainFont
@@ -17,12 +21,14 @@ import {
   currentTheme
 } from '../../assets/styles/globalTheme';
 
+
 const Stack = createStackNavigator();
 
+// Main Page Code
 function Homepage({navigation}) {
   return(
     <MainContainer>
-      <MainFont>Hello World</MainFont>
+      <MainFont style={{fontFamily: 'Roboto-Medium'}}>Hello World</MainFont>
       <Button
         title="Go to Game"
         onPress={()=>{
@@ -30,10 +36,12 @@ function Homepage({navigation}) {
         }}
         >
       </Button>
+      <GameCollectionScreen />
     </MainContainer>
   );
 }
 
+// Game Page Code
 function GamePage() {
   return(
     <MainContainer>
@@ -42,6 +50,7 @@ function GamePage() {
   );
 }
 
+// App Logo
 function LogoTitle() {
   return (
     <Image
@@ -57,12 +66,16 @@ export default function MainScreen(props) {
     foundPrimaryColor: currentTheme.primaryColor,
     foundPrimaryColorAlt: currentTheme.primaryColorAlt,
     foundSecondaryColor: currentTheme.secondaryColor,
+    foundSecondaryColorAlt: currentTheme.secondaryColorAlt,
+    foundPrimaryFontColor: currentTheme.primaryFontColor,
     foundWhite: currentTheme.white,
     foundBlack: currentTheme.black
   });
   const primaryColor = state.foundPrimaryColor;
   const primaryColorAlt = state.foundPrimaryColorAlt;
   const secondaryColor = state.foundSecondaryColor;
+  const secondaryColorAlt = state.foundSecondaryColorAlt;
+  const primaryFontColor = state.foundPrimaryFontColor;
   const white = state.foundWhite;
   const black = state.foundBlack;
   return (
@@ -72,8 +85,14 @@ export default function MainScreen(props) {
           headerTitle: props => <LogoTitle {...props} />,
           headerStyle: {
             backgroundColor: primaryColor,
+            elevation: 0,
+            shadowOpacity: 0,
+            borderBottomWidth: 0
           },
-          headerTintColor: secondaryColor
+          headerTintColor: primaryFontColor,
+          style: {
+            shadowColor: 'transparent',
+          },
         }}
         initialRouteName="Home">
         <Stack.Screen 

@@ -1,17 +1,20 @@
 // Sega Paradise 3 Default Color Scheme
-const primaryColorAlt = 'rgb(160, 141, 165)';
-const secondaryColor = 'rgb(114,225,209)';
-const primaryColor = 'rgb(137, 112, 144)';
+const primaryColor = 'rgb(232, 224, 204)';
+const primaryColorAlt = 'rgb(210, 183, 127)';
+const secondaryColor = 'rgb(187, 163, 164)';
+const secondaryColorAlt = 'rgb(163, 173, 191)';
+const primaryFontColor = 'rgb(119, 86, 90)';
 const white = 'rgb(255, 255, 255)';
 const black = 'rgb(0, 0, 0)';
 const dayThemeOpacity = 0.95;
 const nightThemeOpacity = 0.85;
 
 const segaParadiseDefaultTheme = {
+    primaryColor: primaryColor,
     primaryColorAlt: primaryColorAlt,
     secondaryColor: secondaryColor,
-    primaryColor: primaryColor,
-    primaryFontColor: primaryColor,
+    secondaryColorAlt: secondaryColorAlt,
+    primaryFontColor: primaryFontColor,
     white: white,
     black: black,
     themeOpacity: dayThemeOpacity,
@@ -19,10 +22,11 @@ const segaParadiseDefaultTheme = {
 }
 
 const segaParadiseDefaultThemeDark = {
+    primaryColor: primaryColorAlt,
     primaryColorAlt: primaryColorAlt,
     secondaryColor: secondaryColor,
-    primaryColor: primaryColorAlt,
-    primaryFontColor: secondaryColor,
+    secondaryColorAlt: secondaryColorAlt,
+    primaryFontColor: primaryFontColor,
     white: black,
     black: white,
     themeOpacity: nightThemeOpacity,
