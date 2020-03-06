@@ -1,17 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button, Image } from 'react-native';
-import Font from '../../assets/styles/globalStyling';
+import { View, Text, Button, Image, ScrollView } from 'react-native';
 import axios from 'axios';
 import IGDB_API_KEY from '../../../server/config';
+
+
+// App Styling
+import {
+  MainContainer,
+  MainFont
+} from '../../assets/styles/globalStyling';
 
 export default function GameCollectionScreen() {
   const [gameState, setGameState] = useState({
     apiKey: IGDB_API_KEY.IGDB_API_KEY,
+    genGames: [],
+    genGames2: [],
     game: {
-      consoleID: 29,
+      consoleIDGen: 29,
+      consoleID32x: 30,
+      consoleIDSegaCD: 78,
       id: "",
       name: "",
       cover: "",
+      genGamesImageUrl: "",
       releaseDate: "",
       genres: "",
       developers:"",
@@ -26,23 +37,16 @@ export default function GameCollectionScreen() {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
-          'user-key': gameState.apiKey.toString()
+          'user-key': "" + IGDB_API_KEY.IGDB_API_KEY + ""
         },
-        // Covers 500 games (Genesis, SegaCD and 32x) officially released on and prior to September 16, 1997
-        data: "fields *; where platforms = (29,30,78) & first_release_date < 874368000; limit 500;"
+        // Covers 500 games (Genesis) officially released between August 14, 1989 & January 1, 1994
+        data: "fields first_release_date,name,cover.*; where platforms = (29) & first_release_date > 677635200 & first_release_date < 757814400; sort first_release_date desc; limit 500;"
       })
       .then(res => {
+        const genGames = res.data;
         setGameState({
-          game: {
-            id: ""+ res.data[0].id + "",
-            name: ""+ res.data[0].name + "",
-            cover: ""+ res.data[0].cover + "",
-            releaseDate: ""+ res.data[0].first_release_date + "",
-            genres: ""+ res.data[0].genres + "",
-            developers: "" + res.data[0].involved_companies + "",
-            players: "" + res.data[0].player_perspectives + "",
-            popularity: "" + res.data[0].player_perspectives + ""
-          }
+          genGames,
+          genGamesImageUrl: res.data.id
         })
       })
       .catch(err => {
@@ -52,12 +56,27 @@ export default function GameCollectionScreen() {
 
   useEffect(() => {
       myAsyncEffect()
-  }, []);
+  });
+
+  function SegaGenesisCollection() {
+    const segaGenIGDBArray = gameState.genGames;
+    const segaGameCoverSize = 'cover_big';
+      return (
+        <View>
+          {Object.keys(segaGenIGDBArray)
+              .map((object, i) => (
+                <Text>{segaGenIGDBArray[i].cover.image_id}</Text>
+          ))}
+        </View>
+      )
+  }
   
   return (
-      <View>
-        <Text style={{fontFamily: 'Roboto-Regular'}}>{gameState.game.id}</Text>
-      </View>
+      <MainContainer>
+        <ScrollView>
+          <SegaGenesisCollection />
+        </ScrollView>
+      </MainContainer>
   );
 }
 

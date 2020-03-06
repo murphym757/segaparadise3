@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 // Sega Paradise 3 Default Color Scheme
 const primaryColor = 'rgb(232, 224, 204)';
 const primaryColorAlt = 'rgb(210, 183, 127)';
@@ -10,39 +12,38 @@ const dayThemeOpacity = 0.95;
 const nightThemeOpacity = 0.85;
 
 const segaParadiseDefaultTheme = {
-    primaryColor: primaryColor,
-    primaryColorAlt: primaryColorAlt,
-    secondaryColor: secondaryColor,
-    secondaryColorAlt: secondaryColorAlt,
-    primaryFontColor: primaryFontColor,
-    white: white,
-    black: black,
-    themeOpacity: dayThemeOpacity,
-    '$card-bg': primaryColor
+    light: {
+        primaryColor: primaryColor,
+        primaryColorAlt: primaryColorAlt,
+        secondaryColor: secondaryColor,
+        secondaryColorAlt: secondaryColorAlt,
+        primaryFontColor: primaryFontColor,
+        white: white,
+        black: black
+    },
+    dark: {
+        primaryColor: primaryColorAlt,
+        primaryColorAlt: primaryColorAlt,
+        secondaryColor: secondaryColor,
+        secondaryColorAlt: secondaryColorAlt,
+        primaryFontColor: primaryFontColor,
+        white: black,
+        black: white
+    }
+    
 }
-
-const segaParadiseDefaultThemeDark = {
-    primaryColor: primaryColorAlt,
-    primaryColorAlt: primaryColorAlt,
-    secondaryColor: secondaryColor,
-    secondaryColorAlt: secondaryColorAlt,
-    primaryFontColor: primaryFontColor,
-    white: black,
-    black: white,
-    themeOpacity: nightThemeOpacity,
-    '$card-bg': primaryColor
-}
-
 // Checks for night hours
 let currentTime = new Date();
 let time = currentTime.getHours();
 
 function themeSelector() {
     if (time >= 17 || time < 7) {
-        return segaParadiseDefaultThemeDark;
+        return segaParadiseDefaultTheme.dark;
     } else {
-        return segaParadiseDefaultTheme;
+        return segaParadiseDefaultTheme.light;
     }
 }
-
 export const currentTheme = themeSelector();
+
+export const CurrentThemeContext = React.createContext(currentTheme);
+
